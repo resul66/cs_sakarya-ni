@@ -1,2 +1,2 @@
-# cs_sakarya-ni
+# cs_sakaryauni
 WEB TEKNOLOJİLERİ PROJE-1 
