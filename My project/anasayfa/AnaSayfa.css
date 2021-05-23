@@ -1,0 +1,69 @@
+body{
+    background: url(img/bg.jpg);
+}
+p{
+    font-family: 'Nunito Sans', sans-serif;
+    color: blanchedalmond;
+}
+
+
+
+.content{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   user-select: none;
+   
+}
+.content h1{
+    color: #000;
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+
+}
+.content h2{
+    color: rgb(82, 78, 78);
+    font-size: 50px;
+    font-weight: bold;
+    width: 880px;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+/*Footer*/
+footer{
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    background-color: #343A40;
+}
+footer p{
+    text-align: center;
+}
+
+
+/*NavBar*/
+nav{
+    border-top: red 5px solid;
+}
+nav a{
+    transition: all 0.5s;
+}
+nav a:hover{
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+

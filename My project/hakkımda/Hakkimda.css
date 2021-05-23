@@ -1,0 +1,60 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+}
+body{
+    background-color: rgb(83, 80, 80);
+}
+p{
+    font-family: 'Nunito Sans', sans-serif;
+    color: blanchedalmond;
+    font-size: 18px;
+}
+/*Navbar*/
+nav{
+    border-top: 5px solid red;
+}
+nav a{
+    transition: all 0.5s;
+}
+nav a:hover{
+    background-color: red;
+}
+/*Main*/
+main{
+    text-align: justify;
+    margin-top: 80px;
+}
+main .container-fluid #me{
+    border-left: solid 5px red;
+}
+/*Hobiler*/
+img{
+    width: 50%;
+}
+.blog .col-md{
+    margin-top: 20px;
+    border-left: 5px red solid;
+}
+.yasla{
+    float: left;
+}
+h3{
+    position: absolute;
+    color: rgb(240, 240, 240);
+    border-bottom: 1px solid black;
+}
+/*footer*/
+footer{
+    background: #343A40;
+    height: 80px;
+    line-height: 80px;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom:0px ;
+}
+footer p{
+    display: inline;
+}

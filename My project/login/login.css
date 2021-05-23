@@ -1,0 +1,143 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+}
+body{
+    background-image: url('../img/grey.jpg');
+    height: 100vh;
+    background-size: 100% 100%;
+    
+}
+p{
+    font-family: 'Nunito Sans', sans-serif;
+    color: blanchedalmond;
+    font-size: 18px;
+}
+/*Navbar*/
+nav{
+    border-top: 5px solid red;
+}
+nav a{
+    transition: all 0.5s;
+}
+nav a:hover{
+    background-color: red;
+}
+/*Main*/
+
+/*Form*/
+
+.formkapsam {
+    width: 300px;
+    height: 350px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 40%;
+    top: 30%;
+}
+
+.formkapsam img {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -30px;
+    left: 120px;
+}
+
+.formkapsam h3 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.formkapsam input {
+    width: 80%;
+    left: 5%;
+    position: relative;
+    padding: 10px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.formkapsam button {
+    width: 90%;
+    left: 5%;
+    position: relative;
+    padding: 10px;
+    background: black;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.formkapsam label {
+    font-weight: bold;
+    position: relative;
+    display: block;
+    top: -47px;
+    left: 29px;
+    pointer-events: none;
+    color: black;
+}
+
+.formkapsam input:focus ~ label,
+.formkapsam input:valid ~ label{
+    color: black;
+    top: -60px;
+    font-size: 12px;
+    transition: 0.5s;
+}
+
+.formkapsam input:focus {
+    border-bottom: 1px solid black;
+}
+
+/*Form Denetleme*/
+
+.uyari {
+    position: absolute;
+    left: 40%;
+    top: 80%;
+    color: #fff;
+}
+
+
+/*Responsive*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

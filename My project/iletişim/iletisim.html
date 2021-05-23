@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+     <!--Google Font-->
+     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&display=swap" rel="stylesheet">
+     <!--Bootstrap-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <!--Css-->
+     <link rel="stylesheet" href="iletisim.css">
+     <!--Font Awesome icon için-->
+     <script src="https://kit.fontawesome.com/45c189f6db.js" crossorigin="anonymous"></script>
+     <!--Html Bar'ındaki ikon-->
+     <link rel="icon" href="https://img.icons8.com/flat_round/64/000000/home--v1.png" type="image/icon type">
+</head>
+<body>
+    <nav class="navbar bg-dark navbar-expand-sm navbar-dark fixed-top">
+		<div class="container">
+			<a href="iletisim.html" class="navbar-brand">
+                <i class="fas fa-tty"></i>&nbsp;İletişim
+	      	</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navbarCollapse" class="collapse navbar-collapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a href="../hakkımda/Hakkimda.html" class="nav-link active">
+                            <i class="far fa-meh-rolling-eyes"></i>
+	      				Hakkımda
+	      			</a>
+					</li>
+					<li class="nav-item">
+						<a href="../şehrimiz/Şehrimiz.html" class="nav-link active">
+                            <i class="fas fa-city"></i>
+	      				Şehrimiz
+	      			</a>
+					</li>
+					<li class="nav-item">
+						<a href="../cv/CV.html" class="nav-link active">
+                            <i class="far fa-file"></i>
+	      				CV
+	      			</a>
+					</li>
+					<li class="nav-item">
+						<a href="../login/login.html" class="nav-link active">
+                            <i class="fas fa-sign-in-alt"></i>
+	      				Giriş Yap
+	      			</a>
+					</li>
+					<li class="nav-item">
+						<a href="../anasayfa/AnaSayfa.html" class="nav-link active">
+                            <i class="fas fa-blog"></i>
+                       RESUL DAŞPINAR   
+	      			</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+    </nav> 
+
+    <div class="container">
+       
+        <form id="frm" action="gonder.php" method="POST">
+            <div class="row">
+               <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">AD</label>
+                        <input onblur="adKontrol()" name="isim" type="text" id="ad" class="form-control" placeholder="İsminizi Giriniz">
+                    </div>
+               </div>
+               <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="surname">SOYAD</label>
+                        <input onblur="soyadKontrol()" name="soyisim" type="text" id="surname" class="form-control" placeholder="Soyisminizi Giriniz">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+               <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="email">E-MAİL</label>
+                        <input onblur="emailKontrol()" name="email" type="email" id="email" class="form-control" placeholder="Mailinizi Giriniz / example@gmail.com">
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                <div class="form-group">
+                    <label for="sifre">ŞİFRE</label>
+                    <input onblur="sifreKontrol()" name="sifre" type="password" id="sifre" class="form-control" placeholder="Şifrenizi Giriniz">
+                </div>
+                </div>
+            </div>
+            
+            <div class="row">
+               <div class="col-md-6">
+                    <div class="form-group">
+                <label for="city">ŞEHİR</label>
+                <select name="city" id="city" class="form-control">
+                    <option value="İstanbul">İstanbul</option>
+                    <option value="artvin">Sakarya</option>
+                    <option value="izmir">İzmir</option>
+                    <option value="ankara">Ankara</option>
+                </select>
+            </div>
+               </div>
+               
+             <div class="col-md-4">
+                 <div class="form-group">
+                    <legend>Hobiler</legend>
+                    <div class="row">
+                   <div class="col-lg-5">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input name="hobiler[]" value="spor" type="checkbox"> Spor
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input name="hobiler[]" value="Yüzmek" type="checkbox"> Yüzmek
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input name="hobiler[]" value="Sinemaya Gitmek" type="checkbox">Sinemaya Gitmek
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input name="hobiler[]" value="Oyun Oynamak" type="checkbox">Oyun Oynamak
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input name="hobiler[]" value="Kitap Okumak" type="checkbox">Kitap Okumak
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                </div>
+             </div>
+               
+               
+                <div class="col-md-2">
+                     <div class="form-group">
+                         <legend>Cinsiyet</legend>
+                         <div class="form-radio">
+                             <label class="ml-3" for="erkek">
+                                  <input onblur="cinsiyetKontrol()" id="erkek" name="cinsiyet" type="radio" value="Erkek">Erkek
+                             </label>
+                             <label class="ml-3" for="erkek">
+                                 <input onblur="cinsiyetKontrol()" id="kadın" name="cinsiyet" type="radio" value="Kadın">Kadın
+                             </label>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">MESAJ</label>
+                <textarea onblur="mesajKontrol()" name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Mesajınızı Giriniz"></textarea>
+            </div>
+            
+            <div class="container butonlar">
+                <input class="btn btn-lg" type="submit" name="gonder" value="Gönder" onclick="clickEvent()">
+                <input class="btn btn-lg" type="reset" value="Temizle">
+            </div>
+            
+        </form>
+        
+    </div>
+
+    <footer>
+        <p>Resul Daşpınar /2021 
+        
+        
+        <a href="https://www.instagram.com/r_daspinar/"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://www.facebook.com/optimist66"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fas fa-mail-bulk"></i></a>
+    </p>
+     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
